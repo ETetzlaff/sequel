@@ -1080,6 +1080,7 @@ module Sequel
     
     # SQL expression object based on the expr type.  See +where+.
     def filter_expr(expr = nil, &block)
+      byebug
       expr = nil if expr == []
 
       if expr && block
